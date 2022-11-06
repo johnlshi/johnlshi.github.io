@@ -199,11 +199,21 @@
 
   <form action="https://getform.io/f/94e4a925-7365-4949-89b4-001553cefa62" method="POST">
 
-<input type="email" name="email" id="emailInput" placeholder="Enter email" required="required">
+<h3>Your name</h3>
+<input type="text" name="name" id="nameInput" required="required">
 
-<input type="text" name="name" id="nameInput" placeholder="Enter name" required="required">
+<h3>Message</h3>
+<textarea name="message" id="messageInput" required="required" minlength="20"></textarea>
 
-<input type="text" name="message" id="messageInput" placeholder="Enter your message" required="required">
+<h3>Contact method</h3 >
+<select name="contact-method" class="contactMethod">
+    <option value="Email">Email</option>
+    <option value="Telegram">Telegram</option>
+    <option value="Discord">Discord</option>
+  </select>
+
+<h3>Contact info</h3 >
+<input type="text" name="contact" id="contactMethod" placeholder="Your email/id" required="required">
 
 <p><button type="submit">Submit</button></p>
 </form>
